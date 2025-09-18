@@ -1,0 +1,13 @@
+.login-container {
+    display: flex;
+    min-height: 100vh;
+}
+.intro-section{
+    flex:1;
+    padding: 2rem;
+}
+.login-form{
+    flex:1;
+    padding: 2rem;
+    border-left:"1px solid #ccc";
+}
