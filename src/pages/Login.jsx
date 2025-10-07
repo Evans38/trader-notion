@@ -1,37 +1,34 @@
 import React from "react";
-import { useState } from "react";
 
 import "./Login.css";
 
 function Login() {
-  const [showForm, setShowForm] = useState(false);
   return (
     <div className="login-container">
-      <div className="intro-section">
-        <h1>Trader Notion</h1>
-        <p>Your personal trading journal and analytics dashboard.</p>
-        <button onClick={() => setShowForm(true)}>Get Started</button>
+      <div className="formCard">
+        <form>
+          <input type="text" placeholder="email" />
+          <div className="password-container">
+            <input type="password" placeholder="Password" />
+            <button className="showPassword-btn">Show</button>
+          </div>
+          <button className="login-btn" type="submit">
+            Login
+          </button>
+          <div className="links-group">
+            <a href="#forgot" className="link">
+              Forgot Password?
+            </a>
+            <a href="#signup" className="link">
+              Don't have an account?
+              <srong>Sign Up</srong>
+            </a>
+          </div>
+        </form>
+        <div className="divider">OR</div>
+        <button className="social-btn">Continue with google</button>
+        <button className="social-btn">Continue with apple </button>
       </div>
-      {showForm && (
-        <div className="login-form">
-          <h2>Login</h2>
-          <form>
-            <div>
-              <label>
-                Email:
-                <input type="email" name="email" required />
-              </label>
-            </div>
-            <div>
-              <label>
-                Password:
-                <input type="password" name="password" required />
-              </label>
-            </div>
-            <button type="submit">Login</button>
-          </form>
-        </div>
-      )}
     </div>
   );
 }

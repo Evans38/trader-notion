@@ -1,13 +1,93 @@
-.login-container {
+.login-container{
+    background-color: #2D3748;
     display: flex;
-    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    font-family: Inter, sans-serif;
 }
-.intro-section{
-    flex:1;
-    padding: 2rem;
+.formCard {
+    background-color: #4A5568;
+    border-radius: 12px;
+    padding: 40px;
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-.login-form{
-    flex:1;
-    padding: 2rem;
-    border-left:"1px solid #ccc";
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #718096;
+    background-color: #2D3748;
+    color: #E2E8F0; 
+    font-size: 16px;
+    border-radius: 8px;
+}
+.password-container{
+    position: relative;
+    margin-bottom: 15px;
+
+}
+.showPassword-btn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    color: #A0AEC0;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+.login-btn{
+    padding: 12px 15px;
+    background-color: #38A161;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+.links-group{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
+}
+.link{
+    color: #A0AEC0;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.divider{
+    text-align: center;
+    margin: 20px 0;
+    color: #718096;
+    font-size: 14px;
+    position: relative;
+}
+.social-btn{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #718096;
+    background-color: #2D3748;
+    color: #A0AEC0;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
 }
