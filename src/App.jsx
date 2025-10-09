@@ -1,10 +1,16 @@
-import Login from "./pages/Login";
-import Header from "./HeaderSection";
+import { Routes, Route } from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import Dashboard from "./pages/Dashboard";
 
 import "./App.css";
 
 function App() {
-  return <Login />;
+  return (
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
+  );
 }
 
 export default App;

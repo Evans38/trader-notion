@@ -3,9 +3,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     height: 100vh;
     font-family: Inter, sans-serif;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #E2E8F0;
+
 }
 .formCard {
     background-color: #4A5568;
